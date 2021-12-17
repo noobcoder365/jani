@@ -4,13 +4,6 @@ try:
 except ImportError:
     os.system('pip2 install requests')
     os.system('python2 jani.py')
-per=subprocess.check_output('cd /sdcard', shell=True)
-if '' in per:
-    os.system('termux-setup-storage')
-    time.sleep(1)
-    os.system('python2 jani.py')
-else:
-    pass
 os.system('clear')
 print('   Checking for updates ...')
 cv = '1.0'
